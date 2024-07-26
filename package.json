@@ -1,0 +1,17 @@
+{
+  "name": "simple-llm-playground",
+  "version": "1.0.0",
+  "description": "A project to demonstrate various examples using LLMs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start-llm-parsing": "node examples/llm-enhanced-parsing/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "openai": "^3.0.0"
+  }
+}
