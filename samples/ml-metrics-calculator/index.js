@@ -12,8 +12,8 @@ function calculateMAE(trueValues, predictions) {
     return mae;
 }
 
-// MAPI (Mean Absolute Percentage Error)
-function calculateMAPI(trueValues, predictions) {
+// MAPE (Mean Absolute Percentage Error)
+function calculateMAPE(trueValues, predictions) {
     const errors = trueValues.map((value, index) => Math.abs((value - predictions[index]) / value));
     const mapi = math.mean(errors) * 100;
     return mapi;
@@ -31,8 +31,8 @@ function calculateRSquared(trueValues, predictions) {
 const mae = calculateMAE(trueValues, predictions);
 console.log( chalk.green(`MAE: ${mae}`));
 
-const mapi = calculateMAPI(trueValues, predictions);
-console.log(chalk.blue(`MAPI: ${mapi}%`));
+const mapi = calculateMAPE(trueValues, predictions);
+console.log(chalk.blue(`MAPE: ${mapi}%`));
 
 const rSquared = calculateRSquared(trueValues, predictions);
 console.log(chalk.red(`R²: ${rSquared}`));
