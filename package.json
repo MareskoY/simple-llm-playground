@@ -5,13 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start-llm-parsing": "node examples/llm-enhanced-parsing/index.js"
+    "start-llm-parsing": "node samples/llm-enhanced-parsing/index.js",
+    "start-llm-debater": "node samples/llm-debater/index.js",
+    "start-ml-metrics": "node samples/ml-metrics-calculator/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.3.0",
     "dotenv": "^16.0.0",
+    "mathjs": "^13.0.3",
     "openai": "^3.0.0"
   }
 }
